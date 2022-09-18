@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication2.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <%--    Bootstrap Css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--    DataTable Css--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--    fontawesome Css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    
+
+   
+    <script src="bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+        
+        
+        <%--     Main Content PlaceHolder--%>
+        <div>
+            <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1">
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <%--     Main Content PlaceHolder--%>
+        
+        <footer>
+            <p>&copy All right Reversed </p>
+        </footer>
+    </form>
+</body>
+</html>
